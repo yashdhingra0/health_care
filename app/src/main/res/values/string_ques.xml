@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="q1">Repeated, disturbing, and unwanted memories of the stressful experience?</string>
+    <string name="q2">Repeated, disturbing dreams of the stressful experience?</string>
+    <string name="q3">Suddenly feeling or acting as if the stressful experience were actually happening again (as if you were actually back there reliving it)?</string>
+    <string name="q4">Feeling very upset when something reminded you of the stressful experience?</string>
+    <string name="q5">Having strong physical reactions when something reminded you of the stressful experience (for example, heart pounding, trouble breathing, sweating)?</string>
+    <string name="q6">Avoiding memories, thoughts, or feelings related to the stressful experience?</string>
+    <string name="q7">Avoiding external reminders of the stressful experience (for example, people, places, conversations, activities, objects, or situations)?</string>
+    <string name="q8">Trouble remembering important parts of the stressful experience?</string>
+    <string name="q9">Having strong negative beliefs about yourself, other people, or the world (for example, having thoughts such as: I am bad, there is something seriously wrong with me, no one can be trusted, the world is completely dangerous)?</string>
+    <string name="q10">Blaming yourself or someone else for the stressful experience or what happened after it?</string>
+
+    <string name="o1">Not at all</string>
+    <string name="o2">A little bit</string>
+    <string name="o3">Medium</string>
+    <string name="o4">Quite a bit</string>
+    <string name="o5">Extremely</string>
+
+</resources>
