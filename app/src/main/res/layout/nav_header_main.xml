@@ -19,6 +19,6 @@
         android:layout_height="wrap_content"
         android:textColor="@color/blall"
         android:fontFamily="cursive"
-        android:text="Cure PTSD sitting home" />
+        android:text="Cure Stress sitting home" />
 
 </LinearLayout>

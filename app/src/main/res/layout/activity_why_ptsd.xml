@@ -25,7 +25,7 @@
                 android:gravity="center"
 
 
-                android:text="About PTSD"
+                android:text="About Stress"
                 android:textSize="40dp"
                 android:textColor="#ffff"
                 android:textStyle="bold"/>

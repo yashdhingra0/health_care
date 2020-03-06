@@ -15,7 +15,7 @@
             <item
                 android:id="@+id/whhyy"
                 android:icon="@drawable/whhy"
-                android:title="About PTSD" />
+                android:title="About Stress" />
             <item
                 android:id="@+id/aboutt"
                 android:icon="@drawable/seffel"

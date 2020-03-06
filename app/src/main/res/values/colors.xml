@@ -5,6 +5,6 @@
     <color name="white">#ffffff</color>
     <color name="colorAccent">#FF4081</color>
     <color name="darkgray">#6c6c6c</color>
-
+    <color name="darkblue">#153E63</color>
     <color name="blall">#110F0F</color>
 </resources>
