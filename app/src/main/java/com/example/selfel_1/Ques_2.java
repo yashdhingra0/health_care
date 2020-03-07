@@ -16,6 +16,7 @@ import static com.example.selfel_1.Ques_1.count;
 
 public class Ques_2 extends AppCompatActivity {
     RadioGroup g1,g2,g3,g4,g5;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +27,7 @@ public class Ques_2 extends AppCompatActivity {
         g3=findViewById(R.id.radio_grp3);
         g4=findViewById(R.id.radio_grp4);
         g5=findViewById(R.id.radio_grp5);
+
         g1.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
@@ -58,6 +60,7 @@ public class Ques_2 extends AppCompatActivity {
         });
 
         //g2
+
         g2.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {

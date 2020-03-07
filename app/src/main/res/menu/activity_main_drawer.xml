@@ -21,7 +21,7 @@
                 android:icon="@drawable/seffel"
                 android:title="Why SelFel" />
             <item
-
+                android:id="@+id/visit_web"
                 android:icon="@drawable/seffel"
                 android:title="visit website" />
         </menu>

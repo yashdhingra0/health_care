@@ -21,10 +21,25 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     DrawerLayout mdrawerLayout;
     ActionBarDrawerToggle mtoggle;
     NavigationView nag;
+    Button facial;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+       facial = findViewById(R.id.face_detect);
+       facial.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               Intent inten= new Intent(MainActivity.this,ChooserActivity.class);
+               startActivity(inten);
+           }
+       });
+
+
+
+
+
         mdrawerLayout = findViewById(R.id.drawer_layout);
         mtoggle = new ActionBarDrawerToggle(this, mdrawerLayout, R.string.open, R.string.close);
         mdrawerLayout.addDrawerListener(mtoggle);
@@ -60,6 +75,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             }
             case R.id.aboutt: {
                 Intent i = new Intent(MainActivity.this, selfel_why.class);
+                startActivity(i);
+                break;
+            }
+
+            case R.id.visit_web :
+            {
+                Intent i = new Intent(MainActivity.this, Website_visit.class);
                 startActivity(i);
                 break;
             }

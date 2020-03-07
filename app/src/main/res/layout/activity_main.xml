@@ -11,29 +11,62 @@
     <RelativeLayout
         android:id="@+id/alpha"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
         <ImageView
-            android:layout_width="match_parent"
-        android:layout_height="match_parent"
-            android:background="@drawable/joy" />
+      android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:src="@drawable/copy_paste_text"
+    />
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+          android:layout_marginBottom="10dp"
+          android:orientation="horizontal"
+          >
 
         <Button
-            android:gravity="center"
-            android:layout_margin="25dp"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="40dp"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="startTest"
-            android:textSize="30sp"
-            android:textStyle="bold|italic"
-            android:textColor="#ffff"
-            android:backgroundTint="@color/colorPrimary"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+
             android:background="@drawable/roundbutton"
+            android:backgroundTint="@color/colorPrimary"
+            android:gravity="center"
+            android:onClick="startTest"
             android:text="Start Test"
-            />
-    </RelativeLayout>
+            android:textColor="#ffff"
+            android:padding="10dp"
+            android:textSize="22sp"
+            android:textStyle="italic" />
+
+          <Button
+              android:id="@+id/face_detect"
+              android:layout_width="wrap_content"
+              android:padding="10dp"
+              android:layout_height="wrap_content"
+
+              android:layout_marginLeft="30dp"
+                 android:layout_alignParentBottom="true"
+              android:layout_marginBottom="20dp"
+
+              android:background="@drawable/roundbutton"
+              android:backgroundTint="@color/colorPrimary"
+              android:gravity="center"
+              android:onClick="startTest"
+              android:text="Expression"
+              android:textColor="#ffff"
+              android:textSize="22sp"
+              android:textStyle="italic" />
+
+
+      </LinearLayout>
+      </RelativeLayout>
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/nav_view"
