@@ -8,4 +8,11 @@
     <color name="darkblue">#153E63</color>
     <color name="blall">#110F0F</color>
     <color name="grey">#808185</color>
+    <color name="light_blue">#71B9F1</color>
+    <color name="very_blue">#ABCECB</color>
+
+    <color name="black">#0C0C0C</color>
+    <color name="my_orange">#F5C073</color>
+    <color name="inactive">#8A8C91</color>
+    <color name="active">#FFFFFF</color>
 </resources>
