@@ -1,79 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
     tools:openDrawer="start">
 
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
 
-    <RelativeLayout
-        android:id="@+id/alpha"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
 
-        <ImageView
-      android:layout_width="match_parent"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:src="@drawable/copy_paste_text"
-    />
+    tools:context=".MainActivity"
+    >
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/gallery"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
 
-      <LinearLayout
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-         android:layout_alignParentBottom="true"
-          android:layout_marginBottom="10dp"
-          android:orientation="horizontal"
-          >
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="20dp"
-
-            android:background="@drawable/roundbutton"
-            android:backgroundTint="@color/colorPrimary"
-            android:gravity="center"
-            android:onClick="startTest"
-            android:text="Start Test"
-            android:textColor="#ffff"
-            android:padding="10dp"
-            android:textSize="22sp"
-            android:textStyle="italic" />
-
-          <Button
-              android:id="@+id/face_detect"
-              android:layout_width="wrap_content"
-              android:padding="10dp"
-              android:layout_height="wrap_content"
-
-              android:layout_marginLeft="30dp"
-                 android:layout_alignParentBottom="true"
-              android:layout_marginBottom="20dp"
-
-              android:background="@drawable/roundbutton"
-              android:backgroundTint="@color/colorPrimary"
-              android:gravity="center"
-              android:onClick="startTest"
-              android:text="Expression"
-              android:textColor="#ffff"
-              android:textSize="22sp"
-              android:textStyle="italic" />
+    <LinearLayout
+        android:id="@+id/dotsIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/gallery"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="40dp"
+        android:orientation="horizontal"
+        android:gravity="center"/>
 
 
-      </LinearLayout>
-      </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Events"
+        android:layout_below="@+id/gallery"
+        android:paddingTop="20dp"
+        android:textSize="22dp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_margin="20dp"
+
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:id="@+id/recycler1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclyer2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/recycler1"
+        android:layout_marginTop="10dp"/>
+
+
+
+
+</RelativeLayout>
 
     <com.google.android.material.navigation.NavigationView
+
         android:id="@+id/nav_view"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
+        android:fitsSystemWindows="true"
         app:headerLayout="@layout/nav_header_main"
         app:menu="@menu/activity_main_drawer" />
+
 
 </androidx.drawerlayout.widget.DrawerLayout>

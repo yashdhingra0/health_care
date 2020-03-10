@@ -2,29 +2,28 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
+    <group android:id="@+id/group_menu">
+        <item
+            android:id="@+id/nav_item_one"
 
+            android:title="@string/home" />
+        <item
+            android:id="@+id/nav_item_two"
 
-    <item
-            android:id="@+id/ttestt"
-            android:icon="@drawable/tessst"
-            android:title="Take Test" />
+            android:title="@string/about" />
+        <item
+            android:id="@+id/nav_item_three"
 
+            android:title="@string/tickets" />
+        <item
+            android:id="@+id/nav_item_four"
+            android:title="@string/Credits" />
+        <item
+            android:id="@+id/nav_item_five"
+            android:title="@string/share" />
+        <item android:id="@+id/nav_item_six"
+            android:title="@string/logout"/>
+    </group>
 
-    <item android:title="About">
-        <menu>
-            <item
-                android:id="@+id/whhyy"
-                android:icon="@drawable/whhy"
-                android:title="About Stress" />
-            <item
-                android:id="@+id/aboutt"
-                android:icon="@drawable/seffel"
-                android:title="Why SelFel" />
-            <item
-                android:id="@+id/visit_web"
-                android:icon="@drawable/seffel"
-                android:title="visit website" />
-        </menu>
-    </item>
 
 </menu>

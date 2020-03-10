@@ -8,8 +8,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:background="@drawable/otp_chekker"
-        android:layout_height="400dp">
+        android:layout_height="wrap_content">
 
         <ImageView
             android:id="@+id/iv_phone"
